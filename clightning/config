@@ -1,0 +1,14 @@
+alias=PUT-A-NAME-HERE
+rgb=CA1F7B
+addr=:9735
+network=testnet
+bitcoin-cli=/usr/local/bin/bitcoin-cli         
+bitcoin-datadir=/home/pi/.bitcoin
+bitcoin-rpcuser=raspiuser
+bitcoin-rpcpassword=mypassword
+bitcoin-rpcport=18332
+bitcoin-rpcconnect=127.0.0.1
+log-prefix=raspi-lightning
+ignore-fee-limits=true
+fee-base=10
+daemon

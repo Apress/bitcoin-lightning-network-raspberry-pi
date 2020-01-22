@@ -1,0 +1,17 @@
+[Unit]
+Description=Spark Wallet
+Requires=clightning.service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi
+User=pi
+Group=pi
+Type=simple
+Restart=on-failure
+RestartSec=5s
+PrivateTmp=true
+ExecStart=/usr/local/bin/node /usr/local/bin/spark-wallet --login raspiuser:mypassword
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,35 @@
+[Unit]
+Description=LND Lightning Daemon
+
+[Service]
+ExecStart=/home/pi/gocode/bin/lnd
+ExecStop=/home/pi/gocode/bin/lncli stop
+PIDFile=/home/pi/.lnd/lnd.pid
+
+User=pi
+Group=pi
+Type=simple
+KillMode=process
+TimeoutStartSec=60
+TimeoutStopSec=60
+Restart=always
+RestartSec=60
+
+# Hardening measures
+####################
+# Provide a private /tmp and /var/tmp.
+PrivateTmp=true
+# Mount /usr, /boot/ and /etc read-only for the process.
+ProtectSystem=full
+# Disallow the process and all of its children to gain
+# new privileges through execve().
+NoNewPrivileges=true
+# Use a new /dev namespace only populated with API pseudo devices
+# such as /dev/null, /dev/zero and /dev/random.
+PrivateDevices=true
+# Deny the creation of writable and executable memory mappings.
+MemoryDenyWriteExecute=true
+
+[Install]
+WantedBy=multi-user.target
+

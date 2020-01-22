@@ -1,0 +1,21 @@
+{
+  "name": "bitcoin-script-examples",
+  "version": "1.0.0",
+  "description": "bitcoin script examples in javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js",
+    "use_disabled": "node ./app_use_disabled.js",
+    "checksig": "node ./app_checksig.js"
+  },
+  "keywords": [
+    "bitcoin",
+    "script"
+  ],
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "dependencies": {
+    "bitcoin-script": "^0.1.1"
+  }
+}

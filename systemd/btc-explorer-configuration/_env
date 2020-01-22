@@ -1,0 +1,25 @@
+# The active coin: BTC
+BTCEXP_COIN=BTC
+
+# Host/Port to bind to
+BTCEXP_HOST=127.0.0.1
+BTCEXP_PORT=3002
+
+# Bitcoin RPC Credentials (URI -OR- HOST/PORT/USER/PASS)
+BTCEXP_BITCOIND_HOST=localhost
+BTCEXP_BITCOIND_PORT=18332
+BTCEXP_BITCOIND_USER=raspiuser
+BTCEXP_BITCOIND_PASS=mypassword
+BTCEXP_BITCOIND_RPC_TIMEOUT=5000
+
+# This password is needed to activate RPC command handling via web page.
+# Without a proper login the RPC access won't be possible.
+# When the web page is opened for the first time, it will ask for user/password.
+# Type as username any text, but the password must be the one given below.
+BTCEXP_BASIC_AUTH_PASSWORD=mypassword
+
+# Enable to allow access to all RPC methods (set to "false" when running publicly available explorers)
+BTCEXP_RPC_ALLOWALL=true
+
+# Show tools list in a sub-nav at top of screen (default: true)
+BTCEXP_UI_SHOW_TOOLS_SUBHEADER=true

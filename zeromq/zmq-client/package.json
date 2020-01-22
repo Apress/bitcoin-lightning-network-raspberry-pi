@@ -1,0 +1,19 @@
+{
+  "name": "zmq-client",
+  "version": "1.0.0",
+  "description": "a simple zmq client for bitcoin",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin",
+    "zmq"
+  ],
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "dependencies": {
+    "zeromq": "^5.1.0"
+  }
+}

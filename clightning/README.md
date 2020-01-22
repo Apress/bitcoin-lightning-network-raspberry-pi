@@ -1,0 +1,1 @@
+This directory contains the configuration file "config" that should be put in the .lightning directory.

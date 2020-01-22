@@ -1,0 +1,6 @@
+{
+    "subscriptions": [
+        "connect",
+        "disconnect"
+    ]
+}

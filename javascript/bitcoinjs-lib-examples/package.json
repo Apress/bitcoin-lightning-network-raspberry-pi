@@ -1,0 +1,22 @@
+{
+  "name": "bitcoinjs-lib-examples",
+  "version": "1.0.0",
+  "description": "bitcoinjs-lib examples",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "multisig": "node ./app_multisig.js",
+    "segwit_legacy": "node ./app_segwit_legacy.js",
+    "import_wif": "node ./app_import_wif.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bitcoin",
+    "examples"
+  ],
+  "author": "Harris Brakmic",
+  "license": "MIT",
+  "dependencies": {
+    "bitcoinjs-lib": "^5.1.4"
+  }
+}

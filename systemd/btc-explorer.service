@@ -1,0 +1,16 @@
+[Unit]
+Description=Bitcoin Explorer       
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/btc-explorer
+User=pi  
+Group=pi  
+Type=simple
+ExecStart=/usr/local/bin/btc-rpc-explorer              
+Restart=on-failure
+RestartSec=5s
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
