@@ -12,6 +12,6 @@
   "dependencies": {
     "axios": "^0.21.2",
     "split": "^1.0.1",
-    "tracer": "^1.0.1"
+    "tracer": "^1.1.6"
   }
 }
